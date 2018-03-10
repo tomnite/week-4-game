@@ -1,0 +1,30 @@
+body {
+	background-image: url("../images/background.jpg");
+}
+
+.jumbotron {
+    background-color: #c3702f;
+    color: white;
+}
+
+#instructions {
+    background-color: #f7e8cd;
+    color: #689a56;
+}
+
+#num-to-match {
+    background-color:#5cd081;
+    color: #7f358c; 
+}
+
+.tally {
+    background-color: #66fffc;
+    color: #276464;
+}
+
+.win-or-lose {
+    background-color: #3aa594;
+    color: #c0e6e3;
+}
+    
+

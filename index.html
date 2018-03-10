@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Crystal Collector</title>
+        
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- Added link to local CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        
+        <div class="jumbotron">
+            <h1 class="text-center">Crystal Collector</h1>
+        </div>
+
+        <div class="panel panel-default" id="instructions">
+            <div class="panel-body">
+                <h2>Instructions</h2>                
+                <ul>
+                    <li>You will be given a random number at the start of the game.</li>
+                    <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+                    <li>You win the game by matching your total score to the random number; you lose the game if your total score exceeds the random number.</li>
+                    <li>The value of each crystal is hidden from you until you click on it.</li>
+                    <li>Each time the game starts over, the game will change the values of the crystals.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="panel panel-default" id="num-to-match">
+                    <div class="panel-body">
+                        <h2>Number to match: <span id="numToMatch"></span></h2>
+                        <p id="win-or-lose"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="panel panel-default tally">
+                    <div class="panel-body">
+                        <h3>Wins: <span id="wins"></span></h3>
+                        <h3>Losses: <span id="losses"></span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1">
+                <img src="assets/images/green-gem.png" class="green" alt="Green Crystal" width="50" height="50" />
+            </div>
+            <div class="col-sm-1">
+                <img src="assets/images/yellow-gem.png" class="yellow" alt="Yellow Crystal" width="50" height="50" />
+            </div>
+            <div class="col-sm-1">
+                <img src="assets/images/red-gem.png" class="red" alt="Red Crystal" width="50" height="50" />   
+            </div>
+            <div class="col-sm-1">
+                <img src="assets/images/blue-gem.png" class="blue" alt="Blue Crystal" width="50" height="50" />
+            </div>
+        </div>
+
+        <br>
+        
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default win-or-lose">
+                    <div class="panel-body">
+                        <h2>Your total score is: <span id="totalScore"></span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--Javascript Link-->
+<script src="assets/javascript/game.js"></script> 
+</html>
